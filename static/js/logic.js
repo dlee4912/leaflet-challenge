@@ -117,16 +117,16 @@ function createMap(earthquakes) {
 
                 labels.push(
                                 '<tr><td style="background-color: '
-                                 + getColor(bins[i]) + '; width: 50px;">&nbsp;</td>' 
+                                 + getColor(bins[i]) + '; width: 15px;">&nbsp;</td>' 
                                  + '<td>' + bins[i] + "</td></tr>")
 
                 console.log(labels);
                 
             }
             labels.push("</table>");
-            div.innerHTML = labels.join('<br>');
+            div.innerHTML = labels.join('');
             
-            console.log(div);
+            //console.log(div);
 
         return div;
         };
